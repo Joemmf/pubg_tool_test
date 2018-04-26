@@ -39,7 +39,7 @@ Page({
   searchDetail: function (e) {
     var id = e.target.dataset.id
     wx.navigateTo({
-      url: '../detail/detail?id=' + id
+      url: '../detail/detail?id=' + id + "&name=" + app.globalData.playerName
     })
   }
 
